@@ -5,4 +5,4 @@ img{outline:none;border:0 none}
 ol, ul {list-style: none;}
 .wrapper .block{width: 45%;float: left;border-right: 1px solid #ccc;padding: 20px}
 .wrapper .block.output{border:0;}
-.wrapper .block p{font-size: 20px;color: #000;line-height: 26px}
+.wrapper .block p{font-size: 20px;color: #000;line-height: 26px;font-weight: bold;margin-bottom: 10px}
