@@ -7,30 +7,58 @@
 </head>
 <body>
 <div class="wrapper">
-<div class="img-block">
-  <img id="img" class="img-responsive" src="../images/black.jpeg">  
-</div> 
-  <ul id="tab" class="tab-block">
-    <li><a href="#" data="black" class="black"></a><p>Black</p></li>
-    <li><a href="#" data="gold" class="gold"></a><p>Gold</p></li>
-    <li><a href="#" data="blue" class="blue"> </a><p>Blue</p></li>
-    <li><a href="#"  data="rose-gold" class="rosegold"></a><p>Rose gold</p></li>  
-  </ul>
+<div class="block question"> 
+<p class="head-title">Create a variable called carName, assign the value "Honda City" to it, and display it.</p>
+
+<p class="head-title">Create a variable called number, assign the value 150 to it, and display it.</p>
+
+<p class="head-title">Display the sum of 5 + 10, using two variables x and y.</p>
+
+<p class="head-title">Create a third variable called z, assign x + y to it, and display it.
+</p>
+
+<p class="head-title">Use a single var keyword to create three variables with the following values: firstName = “John” lastName = “Doe" age = 35</p>
+
+<p class="head-title">Create DOB constant. Assume calculateAge() function will give you age. Store the value of calculateAge() in your variable/constant.</p>
+
+<p class="head-title">Create a variable, assign some value to your variable and insert the value inside "div" element.</p>
+
+
+</div>
+<div class="block output"> 
+<p id="string"></p>
+<p id="number"></p>
+<p id="sum"></p>
+<p id="sum1"></p>
+<p id="details"></p>
+<p id="dob"></p>
+<p id="age"></p>
+<div id="content"></div>
+
+</div>
 </div>
 <script>
-  var tabparent = document.getElementById('tab');
-  var tab = tabparent.getElementsByTagName("a");
-  var i;
-  for (i = 0; i < tab.length; ++i) {
-  var tabclick = tab[i];
-  tabclick.addEventListener('click', changeImage) ;
-  }
-  function changeImage(e) {
-    e.preventDefault();
-    var color = this.getAttribute("data");
-    document.getElementById("img").src = "../images/"+color+".jpeg";
-  }
+var carName = "Honda City";
+document.getElementById('string').innerHTML = carName;
+var number = 150;
+document.getElementById('number').innerHTML = number;
+var x = 5,y = 10;
+document.getElementById('sum').innerHTML = x+y;
+var z = x+y;
+document.getElementById('sum1').innerHTML = z;
+var firstName = "John",lastName = "Doe",age = 35;
+document.getElementById('details').innerHTML = firstName + " " + lastName + " " +age;
+var content = "Hello World";
+document.getElementById('content').innerHTML = content;
+var DOB = "26-01-1994"
+calculateAge();
+function calculateAge(){
+  var age = 24; 
+document.getElementById('age').innerHTML = age;
+document.getElementById('dob').innerHTML = DOB;
 
-</script>
+}
+alert("Use above question and use your choice of prompt box to display value of your variable: x + y " +z);
+</script>     
 </body>
 </html>
